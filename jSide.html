@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jSide</title>
+    <link rel="Stylesheet" type="text/css" href="Content/bootstrap.css"/>
+    <link rel="Stylesheet" type="text/css" href="Content/Site.css"/>
+    <link rel="Stylesheet" type="text/css" href="Content/jSide.css"/>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body class="jside">
+    <form id="form1" runat="server">
+
+        <script src="Scripts/jquery-1.10.2.min.js"></script>        
+        <script src="Scripts/bootstrap.min.js"></script>
+        
+        <script src="Scripts/jSide.js"></script>
+        
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Console</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id="console" class="console">
+                            hi!
+                            ich bin ein pferdchenoinswfoinwoifniownfinwoifniownffoiwnwionfwoinfoiwnfoiwnfiwonfiownfiownoinfionowinoiwnfionwoinfoiwnfonwofin
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <nav oncontextmenu="return false;" class="jsToolbar">
+                <ul>
+                    <li>
+                        <a title="Open">
+                            <span style="color: #D7AC6A" class="glyphicon glyphicon-folder-open"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a title="Save on Computer">
+                            <span style="color: #7AC1FF" class="glyphicon glyphicon-floppy-save"></span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="right">
+                    <li>
+                        <a title="Halp">
+                            <span style="color: #7AC1FF" class="glyphicon glyphicon-question-sign"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a title="Run" id="start">
+                            <span style="color: #8DD28A" class="glyphicon glyphicon-play"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="editor" id="editor">
+                function foo() {
+    return "bar";
+}
+            </div>
+        </div>
+
+        <script src="Scripts/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+
+    </form>
+</body>
+</html>
