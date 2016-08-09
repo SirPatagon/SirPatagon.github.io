@@ -1,0 +1,150 @@
+.tile {
+    display: block;
+    float: left;
+    height: 128px;
+    width: 128px;
+    text-decoration: none;
+    color: white !important;
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    text-shadow: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+    .tile:hover {
+        opacity: .9;
+    }
+
+    .tile:active {
+        opacity: .8;
+    }
+
+    .tile img {
+        height: 64px;
+        width: 64px;
+        margin: 12px 27px;
+        cursor: pointer;
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+        user-drag: none;
+    }
+
+.ui-collapsible-set {
+    margin: 0 !important;
+}
+
+.ui-bar-a {
+    border-bottom: 0;
+}
+
+.ui-header .ui-title {
+    margin: 0 !important;
+}
+
+.copyright {
+    position: fixed;
+    bottom: .5em;
+    right: .5em;
+    font-size: 20px;
+    color: #adadad;
+}
+
+#one, #two {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    left: 3px;
+    top: 82px;
+}
+
+iframe {
+    display: block;
+    border: 1px solid #464646;
+    height: 100%;
+    width: 100%;
+}
+
+.ui-body {
+    padding: 0 1em !important;
+    border: 1px solid #6b6b6b;
+    border-top: 0;
+}
+
+.index-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.ui-btn-icon-notext {
+    background: none !important;
+    border: 1px solid rgba(0,0,0,0) !important;
+}
+
+.tile-host {
+    max-width: 414px;
+}
+
+.stundenplan-title {
+    margin-left: 1em;
+    margin-top: .335em;
+    margin-bottom: 0;
+}
+
+.listview-collapsible {
+    padding: 0 !important;
+    margin-top: -1px !important;
+    border: 0 !important;
+}
+
+.listview-collapsible h3 {
+    margin: 0 !important;
+}
+
+.orange {
+    background: orangered !important;
+}
+
+.blue {
+    background: deepskyblue !important;
+}
+
+.green {
+    background: #9EC408 !important;
+}
+
+.ui-page {
+    min-height: 30px !important;
+}
+
+@media(max-width:413px) {
+    .tile-host {
+        max-width: 276px;
+    }
+
+    .copyright {
+        font-size: 1em;
+    }
+}
+
+/*@media(max-height: 350px) {
+    .index-div {
+        align-items: unset !important;
+    }
+}*/
