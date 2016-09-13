@@ -133,6 +133,27 @@ iframe {
     min-height: 30px !important;
 }
 
+table {
+    width: 100%;
+    
+    border-collapse: collapse;
+}
+
+table td, th {
+    padding: 10px;
+    
+}
+
+table tr:nth-child(even){
+    background: #939393;
+}
+
+table th {
+    background: #939393;
+    text-align: left;
+    border-bottom: 1px solid white;
+}
+
 @media(max-width:413px) {
     .tile-host {
         max-width: 276px;
