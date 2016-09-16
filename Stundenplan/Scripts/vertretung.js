@@ -13,7 +13,7 @@ function getWeekNumber(d) {
     return weekNo;
 }
 function GetUrlForWeekNo(nr) {
-    return "http://dev3.bbs-os-brinkstr.de/fileadmin/00info/Stundenplan/1Stdplan_nur_Vertretung/" + nr + "/w/w00037.htm";
+    return "http://dev3.bbs-os-brinkstr.de/fileadmin/00info/Stundenplan/1Stdplan_nur_Vertretung/" + nr + "/w/w00090.htm";
 }
 
 $(document).on("pageshow", "#vertretung", function () {
