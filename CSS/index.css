@@ -1,0 +1,72 @@
+﻿.header {
+    background: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+    .header a {
+        box-sizing: border-box;
+        transition: background ease .25s;
+        color: white;
+        text-decoration: none;
+        display: block;
+        height: 48px;
+    }
+
+        .header a:hover {
+            background: #555;
+        }
+
+.header-logo {
+    float: left;
+    height: 48px;
+}
+
+    .header-logo a h1, img {
+        float: left;
+        vertical-align: central;
+    }
+
+    .header-logo a h1 {
+        margin: 10px;
+        font-size: 1.5em;
+    }
+
+.header-nav {
+    height: 48px;
+    list-style: none;
+    margin: 0;
+    float: left;
+    padding-left: 10px;
+}
+
+    .header-nav li {
+        height: 48px;
+        float: left;
+        box-sizing: border-box;
+    }
+
+        .header-nav li a {
+            padding: 16px 10px;
+            position: relative;
+        }
+
+.page {
+    margin-top: 68px;
+}
+
+a.new-tab::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: url("../Resources/Other/SVG/link-external.svg") no-repeat;
+    background-size: 10px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: -5px;
+}
