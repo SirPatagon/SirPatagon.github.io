@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="CSS/normalize.css" />
-    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="./MaterialDesign/material.min.css">
+    <link rel="stylesheet" href="./CSS/MaterialDesignOverrides.css" />
+    <script src="./MaterialDesign/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <nav class="header">
-        <div class="header-logo">
-            <a href="index.html">
-                <img height="48" width="48" />
-                <h1>SirPatagon</h1>
-            </a>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">SirPatagon.github.io</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Menü</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link mdl-js-ripple-effect mdl-navigation__link--current" href=""><span class="mdl-ripple"></span>Start</a>
+                <a class="mdl-navigation__link mdl-js-ripple-effect" href="Stundenplan/index.html"><span class="mdl-ripple"></span>Stundenplan</a>
+                <a class="mdl-navigation__link mdl-js-ripple-effect" href=""><span class="mdl-ripple"></span>Link</a>
+                <a class="mdl-navigation__link mdl-js-ripple-effect" href=""><span class="mdl-ripple"></span>Link</a>
+            </nav>
         </div>
-        <ul class="header-nav">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a class="new-tab" href="Stundenplan/index.html">Stundenplan</a>
-            </li>
-        </ul>
-    </nav>
-
-    <div class="page">
-
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <footer class="mdl-mini-footer">
+                    <div class="mdl-mini-footer__left-section">
+                        <div class="mdl-logo">Title</div>
+                        <ul class="mdl-mini-footer__link-list">
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Privacy & Terms</a></li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+        </main>
     </div>
 </body>
 </html>
