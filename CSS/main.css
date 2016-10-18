@@ -1,0 +1,29 @@
+.text-div {
+    max-width: 1024px;
+}
+
+.mdl-card-fullwidth.mdl-card {
+    width: 100%;
+}
+
+.mdl-card-title > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('../Resources/BackgroundImages/card_background_1.jpg') center;
+}
+
+.mdl-card-title > .mdl-card__menu {
+    color: #fff;
+}
+
+.mdl-card-timetable > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('../Resources/Other/PNG/Stundenplan.png') center 30% no-repeat #FF4500;
+    background-size: 96px;
+}
+
+.mdl-card-timetable > .mdl-card__menu {
+    color: #fff;
+}
+
