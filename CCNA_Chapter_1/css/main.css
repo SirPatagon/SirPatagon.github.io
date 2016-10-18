@@ -1,0 +1,155 @@
+body {
+    font-family: sans-serif;
+}
+
+.slide {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    padding: 15px;
+}
+
+.intro {
+    background: #2A9FD7;
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: none;
+    flex-direction: column;
+}
+
+    .intro h1 {
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    .intro img {
+        width: 512px !important;
+        height: 512px !important;
+    }
+
+.questions {
+    display: flex;
+    height: 100%;
+    font-size: 128px !important;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+
+.navbar {
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    background: #2A9FD7;
+    z-index: 999;
+    color: white;
+    text-shadow: none;
+    border-bottom: 3px solid #FFF;
+}
+
+    .navbar h1 {
+        font-size: 48px;
+        margin: 0 10px;
+    }
+
+    .navbar .seperator {
+        border-left: 3px solid white;
+        margin: 10px;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 570px;
+    }
+
+    .navbar > div.side {
+        display: flex;
+        flex-direction: row-reverse;
+        position: absolute;
+        left: 580px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .navbar > div div {
+        width: 60px;
+        transition: width ease 1s, flex ease 1s;
+        text-align: center;
+        line-height: 47px;
+        white-space: nowrap;
+        font-size: 38px;
+        overflow: hidden;
+        margin: 12px 15px;
+        box-sizing: border-box;
+        font-weight: bold;
+    }
+
+        .navbar > div div.active {
+            flex: 1;
+        }
+
+h1 {
+    margin-top: 0;
+    font-size: 96px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 48px;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+h4 {
+    margin-top: 0;
+}
+
+p, ul {
+    margin-top: 0;
+    font-size: 42px;
+    text-align: left;
+}
+
+.title-heading {
+    font-size: 72px;
+    margin-bottom: 120px;
+    margin-top: 30px;
+}
+
+.title-list {
+    font-size: 72px;
+}
+
+    .title-list > li {
+        list-style-type: none;
+    }
+
+.ui-page {
+    padding-top: 45px;
+}
+
+.sub-heading {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.blue-layer {
+    background-color: #2A9FD7;
+    color: #FFF;
+}

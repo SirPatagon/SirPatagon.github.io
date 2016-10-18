@@ -27,3 +27,14 @@
     color: #fff;
 }
 
+.mdl-card-presentation > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('../CCNA_Chapter_1/res/titleLogoBest.png') center 30% no-repeat #2A9FD7;
+    background-size: 96px;
+}
+
+.mdl-card-presentation  > .mdl-card__menu {
+    color: #fff;
+}
+

@@ -2,3 +2,15 @@
     overflow: hidden;
     position: relative;
 }
+
+.mdl-layout__drawer {
+    width: 275px;
+    transform: translateX(-275px);
+}
+
+.mdl-layout-subheading {
+    padding-top: 16px;
+    line-height: 48px;
+    padding-left: 40px;
+    font-size: 16px;
+}
