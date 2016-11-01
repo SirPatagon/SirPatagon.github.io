@@ -1,16 +1,28 @@
 function getWeekNumber(d) {
-    // Copy date so don't modify original
-    d = new Date(+d);
-    d.setHours(0, 0, 0);
-    // Set to nearest Thursday: current date + 4 - current day number
-    // Make Sunday's day number 7
-    d.setDate(d.getDate() + 4 - (d.getDay() || 7));
-    // Get first day of year
-    var yearStart = new Date(d.getFullYear(), 0, 1);
-    // Calculate full weeks to nearest Thursday
-    var weekNo = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
-    // Return array of year and week number
-    return weekNo;
+    // Get thursday
+    // In JavaScript the Sunday has value 0 as return value of getDay() function. 
+    // So we have to order them first ascending from Monday to Sunday
+    // Monday: ((1+6) % 7) = 0
+    // Tuesday	((2+6) % 7) = 1
+    // Wednesday:	((3+6) % 7) = 2
+    // Thursday:	((4+6) % 7) = 3
+    // Friday: ((5+6) % 7) = 4
+    // Saturday:	((6+6) % 7) = 5
+    // Sunday: ((0+6) % 7) = 6
+    // (3 - result) is necessary to get the Thursday of the current week. 
+    // If we want to have Tuesday it would be (1-result)
+    var currentThursday = new Date(d.getTime() + (3 - ((d.getDay() + 6) % 7)) * 86400000);
+    // At the beginnig or end of a year the thursday could be in another year.
+    var yearOfThursday = currentThursday.getFullYear();
+
+    // Get first Thursday of the year
+    var firstThursday = new Date(new Date(yearOfThursday, 0, 4).getTime() + (3 - ((new Date(yearOfThursday, 0, 4).getDay() + 6) % 7)) * 86400000);
+
+    // +1	we start with week number 1
+    // +0.5 an easy and dirty way to round result (in combinationen with Math.floor)
+    var weekNumber = Math.floor(1 + 0.5 + (currentThursday.getTime() - firstThursday.getTime()) / 86400000 / 7);
+
+    return weekNumber;
 }
 function GetUrlForWeekNo(nr) {
     return "http://dev3.bbs-os-brinkstr.de/fileadmin/00info/Stundenplan/1Stdplan_nur_Vertretung/" + nr + "/w/w00090.htm";
