@@ -1,3 +1,7 @@
+.mdl-card {
+    height:315px;
+}
+
 .mdl-navigation__link {
     overflow: hidden;
     position: relative;
