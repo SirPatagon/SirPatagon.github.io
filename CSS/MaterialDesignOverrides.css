@@ -5,6 +5,17 @@
 .mdl-navigation__link {
     overflow: hidden;
     position: relative;
+    height: 24px;
+}
+
+.mdl-navigation__link img {
+    height: 24px;
+}
+
+.mdl-navigation__link span {
+    margin: 0 24px;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .mdl-layout__drawer {
@@ -12,9 +23,21 @@
     transform: translateX(-275px);
 }
 
-.mdl-layout-subheading {
-    padding-top: 16px;
-    line-height: 48px;
-    padding-left: 40px;
-    font-size: 16px;
+.mdl-layout-title {
+    background: #3f51b5;
+    color: white;
+}
+
+.mdl-layout-title img {
+    margin-top: -2px;
+    height: 32px;
+}
+
+.mdl-navigation__separator {
+    border-top: 1px solid #e3e3e3;
+    margin: 12px 0 12px 0;
+}
+
+.mdl-navigation {
+    padding-top: 0 !important;
 }

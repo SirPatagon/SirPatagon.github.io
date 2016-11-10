@@ -53,3 +53,16 @@ body {
     color: #fff;
 }
 
+.mdl-card-jside > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('../Resources/Other/SVG/jsIDE.svg') center 30% no-repeat #0062b3;
+    background-size: 96px;
+}
+
+.mdl-card-jside  > .mdl-card__menu {
+    color: #fff;
+}
+
+
+
