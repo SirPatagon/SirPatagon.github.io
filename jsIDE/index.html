@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../MaterialDesign/material.min.css" />
+    <link rel="stylesheet" href="../CSS/MaterialDesignOverrides.css" />
+    <link rel="stylesheet" href="./style/base.css" />
+    <script src="../MaterialDesign/material.min.js"></script>
+    <script src="../JavaScript/jquery-3.1.1.min.js"></script>
+    <script src="./3rd_party/Ace/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/init.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+
+        <!--Navbar-->
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">
+                    jsIDE
+                </span>
+
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                    <i class="material-icons" style="color:lightgreen;">play_arrow</i>
+                </button>
+            </div>
+        </header>
+
+        <!--Sidebar-->
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">
+                <img src="../Resources/Other/SVG/jsIDE.svg" />
+                jsIDE
+            </span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link mdl-js-ripple-effect" href="#">
+                    <span class="mdl-ripple"></span>
+                    <i class="material-icons" style="color: #D7AC6A;">open_in_browser</i>
+                    <span>Öffnen</span>
+                </a>
+                <a class="mdl-navigation__link mdl-js-ripple-effect" href="#">
+                    <span class="mdl-ripple"></span>
+                    <i class="material-icons" style="color: #7AC1FF;">save</i>
+                    <span>Speichern</span>
+                </a>
+                <div class="mdl-navigation__separator"></div>
+                <a class="mdl-navigation__link mdl-js-ripple-effect" href="../index.html">
+                    <span class="mdl-ripple"></span>
+                    <i class="material-icons">home</i>
+                    <span>SirPatagon.github.io</span>
+                </a>
+            </nav>
+        </div>
+
+        <!--Content-->
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <div id="editor"></div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
