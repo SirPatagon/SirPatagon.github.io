@@ -7,14 +7,14 @@
     font-size: 20px;
 }
 
-.mdl-layout-title{
+.mdl-layout__drawer .mdl-layout-title{
     height: 128px;
     display: flex;
     align-items: center;
     font-size: 36px;
 }
 
-.mdl-layout-title img {
+.mdl-layout__drawer .mdl-layout-title img {
     height: 96px;
     margin-right: 16px;
 }
