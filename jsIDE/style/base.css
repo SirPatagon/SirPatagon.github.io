@@ -7,6 +7,10 @@
     font-size: 20px;
 }
 
+.mdl-layout-title, .mdl-layout__header {
+    background: rgb(0, 98, 179) !important;
+}
+
 .mdl-layout__drawer .mdl-layout-title{
     height: 128px;
     display: flex;
