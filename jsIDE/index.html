@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="../CSS/normalize.css" />
     <link rel="stylesheet" href="../MaterialDesign/material.min.css" />
     <link rel="stylesheet" href="../CSS/MaterialDesignOverrides.css" />
     <link rel="stylesheet" href="./style/base.css" />
@@ -8,6 +9,7 @@
     <script src="../JavaScript/jquery-3.1.1.min.js"></script>
     <script src="./3rd_party/Ace/ace.js" type="text/javascript" charset="utf-8"></script>
     <script src="./js/init.js"></script>
+    <script src="./js/events.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -23,9 +25,9 @@
                     jsIDE
                 </span>
 
-                <!-- Add spacer, to align navigation to the right -->
+                <!-- Launch Button -->
                 <div class="mdl-layout-spacer"></div>
-                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                <button id="btOpenConsole" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
                     <i class="material-icons" style="color:lightgreen;">play_arrow</i>
                 </button>
             </div>
@@ -41,12 +43,12 @@
                 <a class="mdl-navigation__link mdl-js-ripple-effect" href="#">
                     <span class="mdl-ripple"></span>
                     <i class="material-icons" style="color: #D7AC6A;">open_in_browser</i>
-                    <span>Öffnen</span>
+                    <span>Öffnen (WiP)</span>
                 </a>
                 <a class="mdl-navigation__link mdl-js-ripple-effect" href="#">
                     <span class="mdl-ripple"></span>
                     <i class="material-icons" style="color: #7AC1FF;">save</i>
-                    <span>Speichern</span>
+                    <span>Speichern (WiP)</span>
                 </a>
                 <div class="mdl-navigation__separator"></div>
                 <a class="mdl-navigation__link mdl-js-ripple-effect" href="../index.html">
@@ -60,7 +62,43 @@
         <!--Content-->
         <main class="mdl-layout__content">
             <div class="page-content">
-                <div id="editor"></div>
+                <div id="editor">/*
+    jsIDE unterstützt nur JavaScript als Programmiersprache.
+    Installiert ist zusätzlich jQuery 3.1.1.
+
+    Funktionen:
+        main() -> Wird als allererstes aufgerufen
+        write(str) -> Gibt Text aus
+        writeln(str) -> Gibt Text aus und fügt eine neue Zeile hinzu
+        readln(title) -> Fordert den User zur Eingabe auf. Gibt Eingabe zurück.
+        clr() -> Löscht den Bildschirminhalt.
+*/
+
+function main() {
+    writeln("Willkommen bei jsIDE!\n");
+    var name = readln("Wie heißt du?");
+    writeln("\nHallo, " + name + "!");
+}</div>
+            </div>
+        </main>
+    </div>
+
+    <!--Konsole-->
+    <div id="Console" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <div aria-expanded="false" id="btCloseConsole" role="button" tabindex="0" class="mdl-layout__drawer-button" data-vivaldi-spatnav-clickable="1"><i class="material-icons">arrow_back</i></div>
+                <!-- Title -->
+                <span class="mdl-layout-title console-title">Konsole</span>
+            </div>
+        </header>
+
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <div class="console-core">
+                    jsIDE [Version 0.2]<br />
+                </div>
             </div>
         </main>
     </div>

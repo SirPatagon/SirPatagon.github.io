@@ -11,14 +11,49 @@
     background: rgb(0, 98, 179) !important;
 }
 
-.mdl-layout__drawer .mdl-layout-title{
+.mdl-layout__drawer .mdl-layout-title {
     height: 128px;
     display: flex;
     align-items: center;
     font-size: 36px;
 }
 
-.mdl-layout__drawer .mdl-layout-title img {
-    height: 96px;
-    margin-right: 16px;
+    .mdl-layout__drawer .mdl-layout-title img {
+        height: 96px;
+        margin-right: 16px;
+    }
+
+#Console {
+    z-index: 99999;
+}
+
+.console-title {
+    visibility: visible !important;
+}
+
+.console-core {
+    background: #000;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left:0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+    font-size: 20px;
+    color: #fff;
+    line-height: 22px;
+    font-family: Consolas, monaco, monospace;
+}
+
+.console-core::selection {
+    background: rgba(255, 255, 255, .99);
+    color: black;
+}
+
+.console-core::-moz-selection {
+    background: rgba(255, 255, 255, .99);
+    color: black;
 }
