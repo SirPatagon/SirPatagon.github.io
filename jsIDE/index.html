@@ -40,15 +40,20 @@
                 jsIDE
             </span>
             <nav class="mdl-navigation">
-                <a class="mdl-navigation__link mdl-js-ripple-effect" href="#">
+                <div class="mdl-textfield js-filename mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="text" id="tbFileName">
+                    <label class="mdl-textfield__label" for="sample1">Dateiname...</label>
+                </div>
+                <a id="aOpenFile" class="mdl-navigation__link mdl-js-ripple-effect" href="#">
                     <span class="mdl-ripple"></span>
                     <i class="material-icons" style="color: #D7AC6A;">open_in_browser</i>
-                    <span>Öffnen (WiP)</span>
+                    <span>Öffnen</span>
+                    <input type="file" id="openFileDlg" hidden="hidden" accept="application/javascript"/>
                 </a>
-                <a class="mdl-navigation__link mdl-js-ripple-effect" href="#">
+                <a id="aSaveFile" class="mdl-navigation__link mdl-js-ripple-effect" href="#">
                     <span class="mdl-ripple"></span>
                     <i class="material-icons" style="color: #7AC1FF;">save</i>
-                    <span>Speichern (WiP)</span>
+                    <span>Speichern</span>
                 </a>
                 <div class="mdl-navigation__separator"></div>
                 <a class="mdl-navigation__link mdl-js-ripple-effect" href="../index.html">

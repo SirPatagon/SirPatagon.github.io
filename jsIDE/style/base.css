@@ -38,7 +38,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    left:0;
+    left: 0;
     overflow-y: scroll;
     overflow-x: hidden;
     overflow-wrap: break-word;
@@ -48,12 +48,27 @@
     font-family: Consolas, monaco, monospace;
 }
 
-.console-core::selection {
-    background: rgba(255, 255, 255, .99);
-    color: black;
+    .console-core::selection {
+        background: rgba(255, 255, 255, .99);
+        color: black;
+    }
+
+    .console-core::-moz-selection {
+        background: rgba(255, 255, 255, .99);
+        color: black;
+    }
+
+.js-filename {
+    padding: 8px 28px;
 }
 
-.console-core::-moz-selection {
-    background: rgba(255, 255, 255, .99);
-    color: black;
+.js-filename > .mdl-textfield__label {
+    top: 12px;
+    left: 28px;
+    right: 28px;
+    width: auto !important;
+}
+
+.js-filename > .mdl-textfield__label:after {
+    bottom: 8px;
 }

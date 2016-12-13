@@ -1,4 +1,4 @@
-<!-- saved from url=(0045)http://mrdoob.com/lab/javascript/spinpainter/ -->
+﻿<!-- saved from url=(0045)http://mrdoob.com/lab/javascript/spinpainter/ -->
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -190,7 +190,7 @@
 
         function rand() {
 
-            return Math.floor(Math.random() * 255);
+            return Math.floor(Math.random() * 255/* * 255*/);
 
         }
 
@@ -209,7 +209,26 @@
 
                 context.beginPath();
                 context.arc(x, y, size, 0, Math.PI * 2);
-                context.fillStyle = 'rgb(' + [rand(), rand(), rand()].toString() + ')';
+
+                //context.fillStyle = 'rgb(' + [rand(), rand(), rand()].toString() + ')';
+                //context.fillStyle = 'rgba(' + [rand(), rand(), rand(), rand()].toString() + ')';
+                switch (rand() % 4) {
+                    case 0:
+                        context.fillStyle = 'red';
+                        break;
+                    case 1:
+                        context.fillStyle = 'blue';
+                        break;
+                    case 2:
+                        context.fillStyle = 'green';
+                        break;
+                    case 3:
+                        context.fillStyle = 'yellow';
+                        break;
+                    default:
+                        break;
+                }
+
                 context.fill();
 
             }
