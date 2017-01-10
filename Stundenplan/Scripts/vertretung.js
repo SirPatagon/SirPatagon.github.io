@@ -24,8 +24,15 @@ function getWeekNumber(d) {
 
     return weekNumber;
 }
+
+function pad(n, width, z) {
+    z = z || '0';
+    n = n + '';
+    return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+}
+
 function GetUrlForWeekNo(nr) {
-    return "http://dev3.bbs-os-brinkstr.de/fileadmin/00info/Stundenplan/1Stdplan_nur_Vertretung/" + nr + "/w/w00090.htm";
+    return "http://dev3.bbs-os-brinkstr.de/fileadmin/00info/Stundenplan/1Stdplan_nur_Vertretung/" + pad(nr, 2) + "/w/w00090.htm";
 }
 
 $(document).on("pageshow", "#vertretung", function () {

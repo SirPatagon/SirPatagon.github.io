@@ -21,8 +21,6 @@ $(function () {
                     currentLanguage = result;
                     setRes();
                 })
-            } else {
-                alert("Other non-handled error type");
             }
         });
 
