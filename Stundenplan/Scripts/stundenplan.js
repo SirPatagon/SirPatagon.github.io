@@ -1,7 +1,15 @@
 var ungeradeWoche =
         '<div data-role="collapsibleset" data-inset="false" data-iconpos="right" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">' +
             '<div data-role="collapsible">' +
-                '<h3>09:50 - 11:20&emsp;&emsp;IT7+c</h3>' +
+                '<h3>8:00 - 9:30&emsp;&emsp;Politik</h3>' +
+                '<p>' +
+                    'Lehrer: Herr Wichmann' +
+                    '<br />' +
+                    'Raum: 116' +
+                '</p>' +
+            '</div>' +
+            '<div data-role="collapsible">' +
+                '<h3>9:50 - 11:20&emsp;&emsp;IT7+c</h3>' +
                 '<p>' +
                     'Lehrer: Herr Wichmann' +
                     '<br />' +
@@ -14,14 +22,6 @@ var ungeradeWoche =
                     'Lehrer: Herr Korte' +
                     '<br />' +
                     'Raum: 6' +
-                '</p>' +
-            '</div>' +
-            '<div data-role="collapsible">' +
-                '<h3>13:30 - 15:00&emsp;&emsp;Englisch</h3>' +
-                '<p>' +
-                    'Lehrer: Herr Kriege' +
-                    '<br />' +
-                    'Raum: 4' +
                 '</p>' +
             '</div>' +
         '</div>';
