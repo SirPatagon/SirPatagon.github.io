@@ -33,7 +33,7 @@ var geradeWoche =
                     '<p>' +
                         'Lehrer: Herr Korte' +
                         '<br />' +
-                        'Raum: 324' +
+                        'Raum: 113' +
                     '</p>' +
                 '</div>' +
                 '<div data-role="collapsible">' +
@@ -53,11 +53,11 @@ var geradeWoche =
                     '</p>' +
                 '</div>' +
                 '<div data-role="collapsible">' +
-                    '<h3>13:30 - 15:00&emsp;&emsp;Englisch</h3>' +
+                    '<h3>13:30 - 15:00&emsp;&emsp;Politik</h3>' +
                     '<p>' +
-                        'Lehrer: Herr Kriege' +
+                        'Lehrer: Herr Wichmann' +
                         '<br />' +
-                        'Raum: 4' +
+                        'Raum: 324' +
                     '</p>' +
                 '</div>' +
             '</div>';
