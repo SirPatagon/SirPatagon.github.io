@@ -164,6 +164,11 @@ table th {
     }
 }
 
+h2.title-red {
+    text-align: center;
+    color: #ff5555;
+}
+
 /*@media(max-height: 350px) {
     .index-div {
         align-items: unset !important;

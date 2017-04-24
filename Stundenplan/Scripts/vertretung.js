@@ -31,14 +31,14 @@ function pad(n, width, z) {
     return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
 }
 
-function GetUrlForWeekNo(nr) {
-    return "http://dev3.bbs-os-brinkstr.de/fileadmin/00info/Stundenplan/1Stdplan_nur_Vertretung/" + pad(nr, 2) + "/w/w00091.htm";
-}
-
 $(document).on("pageshow", "#vertretung", function () {
     "use strict";
     var weekNo = getWeekNumber(new Date());
     $('a[href="#one"]').click().focus();
-    $("#vertretungDieseWoche").attr("src", GetUrlForWeekNo(weekNo));
-    $("#vertretungNaechsteWoche").attr("src", GetUrlForWeekNo(weekNo + 1));
+    $.get("http://sirpatagon.gear.host/Vertretungsplan?weekno=" + weekNo, function(data) {
+        $("#one").html(data);
+    });
+    $.get("http://sirpatagon.gear.host/Vertretungsplan?weekno=" + (weekNo+1), function(data) {
+        $("#two").html(data);
+    });
 });
