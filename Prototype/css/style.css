@@ -33,22 +33,35 @@ footer.page-footer {
     .navbar {
         background-color: #1C2331;
     }
+
+    .navbar-collapse {
+        margin-top: 7.5px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+        .navbar-collapse .nav-link {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
 }
+
+
 
 /*Intro*/
 
 @media (max-width: 768px) {
-    .full-bg-img,
+    /*.full-bg-img,
     .view {
         height: auto;
         position: relative;
-    }
+    }*/
 }
 
 .description {
     /*padding-top: 25%;
     padding-bottom: 3rem;*/
-    color: #fff
+    color: #fff;
 }
 
 @media (max-width: 992px) {
@@ -65,16 +78,16 @@ footer.page-footer {
 /*Colors*/
 
 .btn-ptc {
-  background-color: #45526E !important;
+    background-color: #45526E !important;
 }
 
-.btn-ptc:hover {
-  background-color: #59698d !important;
-}
+    .btn-ptc:hover {
+        background-color: #59698d !important;
+    }
 
-.btn-ptc:focus {
-  background-color: #59698d !important;
-}
+    .btn-ptc:focus {
+        background-color: #59698d !important;
+    }
 
 footer.page-footer {
     background-color: #1C2331;
@@ -83,6 +96,7 @@ footer.page-footer {
 .carousel-multi-item .carousel-indicators li {
     background-color: #1C2331;
 }
+
 .carousel-multi-item .carousel-indicators .active {
     background-color: #1C2331;
 }
