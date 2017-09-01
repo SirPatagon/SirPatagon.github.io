@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loader {
+            border: 16px solid transparent;
+            border-top: 16px solid red;
+            border-right: 16px solid green;
+            border-left: 16px solid blue;
+            border-bottom: 16px solid yellow;
+            border-radius: 50%;
+            animation: spin 20s linear infinite;
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            flex: 1 1;
+        }
+
+        .loader-content {
+            height: 512px;
+            width: 512px;
+            overflow: hidden;
+        }
+/*
+        .loader-2 {
+            height: 482px;
+            width: 482px;
+        }
+
+        .loader-3 {
+            height: 452px;
+            width: 452px;
+        }*/
+    </style>
+</head>
+<body>
+    <div class="loader loader-content">
+        <div class="loader">
+            <div class="loader">
+                <div class="loader">
+                    <div class="loader">
+                        <div class="loader">
+                            <div class="loader">
+                                <div class="loader">
+                                    <div class="loader">
+                                        <div class="loader">
+                                            <div class="loader">
+                                                <div class="loader">
+                                                    <div class="loader">
+                                                        <div class="loader">
+                                                            <div class="loader">
+                                                                <div class="loader">
+                                                                    <div class="loader">
+                                                                            
+                                                                    </div> 
+                                                                </div> 
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</body>
+</html>
