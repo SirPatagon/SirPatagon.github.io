@@ -1,0 +1,7 @@
+ha-dialog {
+    color: black !important;
+}
+
+ha-dialog>* {
+    color: black !important;
+}
